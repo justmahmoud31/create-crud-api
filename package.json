@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": " A basic starter for an express.js API with Typescript",
   "main": "src/index.ts",
+  "type": "module",
   "bin": {
     "tuttrue-create-crud-api": "dist/index.js"
   },
@@ -26,14 +27,15 @@
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",
     "@types/inquirer": "^9.0.7",
-    "@types/node": "^20.14.10",
+    "@types/node": "^20.16.1",
     "@typescript-eslint/eslint-plugin": "^7.16.1",
     "@typescript-eslint/parser": "^7.16.1",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
+    "nodemon": "^3.1.4",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.4"
   }
 }

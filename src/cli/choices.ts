@@ -22,6 +22,10 @@ export const frameworkOrms: FrameworkOrms = {
       name: 'Mongoose',
       value: 'mongoose',
     },
+    {
+      name:'Sequalize',
+      value:'sequalize'
+    }
   ],
   hono: [
     {
@@ -115,4 +119,35 @@ export const structureCreator: { [key: string]: any } = {
   `,
     },
   ],
+  'express-seqaulize':[
+    {
+      name:"Basic",
+      value:'basic',
+      description: `src
+      ├── application
+      │   ├── Errors
+      │   └── XxUsecase.ts
+      ├── domain
+      │   ├── model
+      │   │   └── IXx.ts
+      │   └── repository
+      │       └── XxRepository.ts
+      ├── index.ts
+      ├── infrastructure
+      │   ├── sequalize
+      │   │   ├── BaseSchema.ts
+      │   │   ├── connection.ts
+      │   │   ├── models
+      │   │   │   └── Xx.ts
+      │   │   └── mongooseRepositories
+      │   │       └── MongooseXxRepository.ts
+      └── presentation
+          └── api
+              ├── index.ts
+              └── Xx
+                  ├── index.ts
+                  └── XxController.ts
+      `
+    }
+  ]
 };
